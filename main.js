@@ -1,12 +1,12 @@
-var X = +prompt('Введите число')
-var Y = +prompt('Введите число')
-var Z = +prompt('Введите число')
+var X = +prompt('Введите 1 число') //2
+var Y = +prompt('Введите 2 число') //7
+var Z = +prompt('Введите 3 число') //10
 
-if (X > Y > Z || X < Y < Z){
+if (Y < X && Y > Z || Y > X && Y < Z){
     alert('Середина чисел ' + Y)
-}else if (Y > Z > X || Y < Z < X){
+}else if (Z < X && Z > Y || Z > X && Z < Y){
     alert('Середина чисел ' + Z)
-}else if (Z > X > Y || Z < X < Y){
+}else if (X < Y && X > Z || X > Y && X < Z){
     alert('Середина чисел ' + X)
 }else {
         alert('Нету середины чисел')
